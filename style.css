@@ -1,0 +1,261 @@
+
+body{
+font-family: Barlow Semi Condensed;
+}
+.container  {
+
+background-color: hsl(210, 46%, 95%);
+display: grid;
+row-gap: 30px;
+margin-bottom: 10%;
+
+
+}
+
+
+    
+/*setting the profile photo's radius and location*/
+.daniel,
+.jeanette,
+.patric,
+.kira,
+.jonathan
+{
+    border-radius: 50%;
+    width:25px;
+    float:left;
+   
+}
+
+.daniel,
+.jeanette,
+.kira,
+.jonathan
+{
+border: 2px solid rgba(255, 255, 255, 0.548);
+}
+
+.patric{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+
+/*setting the Name location and color*/
+
+
+.box1{
+    padding:5%;
+border-radius: 10px;
+background-image: url(./images/bg-pattern-quotation.svg);
+background-repeat: no-repeat;
+background-position: 90% 0%;
+    }
+
+.box2, 
+.box3,
+.box5{
+    padding:5%;
+    border-radius: 10px;
+
+}
+
+    
+.box4{
+    padding:5%;
+    border-radius: 10px;
+}
+
+
+
+
+/*white setting sentence */
+
+.name-white{
+ float:left;
+color:white;
+display: block;
+margin-top: 0%;
+margin-left: 5%;
+
+    
+}
+
+
+
+
+.bold{
+    display:block;
+    clear:both;
+    color:white;
+    font-size: 1.3em;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.sentence{
+  
+    color:rgba(255, 255, 255, 0.685);
+    font-size: 1em;
+    line-height: 150%;
+    margin-bottom: 5%;
+    padding: 5%;
+}
+
+
+/*dark grey setting sentence*/
+
+.name-dark{
+
+    float:left;
+    color:black;
+    margin-top: 0%;
+    padding-left: 5%;
+    display:block;
+ 
+}
+
+
+.bold-dark{
+display:block;
+clear:both;
+color:black;
+font-size: 1.3em;
+font-weight: 500;
+
+}
+
+.sentence-dark{
+    color:black;
+    font-size: 1em;
+    line-height: 150%;
+    padding-top: 5%;
+}
+
+
+
+/*each box background settting */
+
+.box1{
+
+background-color:hsl(263, 55%, 52%);
+
+}
+
+.box2{
+
+    background-color:hsl(217, 19%, 35%);
+    
+    }
+    
+
+.box3{
+
+background-color:hsl(0, 0%, 100%);
+
+}
+
+.box4{
+
+    background-color:hsl(219, 29%, 14%);
+    
+
+}
+    
+.box5{
+
+    background-color: hsl(0, 0%, 100%);
+    
+
+}
+
+@media screen and (max-width:440px) {
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5
+{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    
+    }
+
+
+
+@media screen and (min-width:990px){
+body{      background-color: hsl(210, 46%, 95%);
+
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 10%;
+
+}
+
+    .container  {
+
+  
+display: grid;
+ grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
+ grid-template-rows:18% 32% 28% 22%;
+ justify-content: center;
+ row-gap: 20px;
+ column-gap: 20px;
+
+ 
+     
+      
+        }
+   
+.box1{
+
+order:1;
+grid-column: 2/ 4;
+grid-row: 2/ 3;
+
+
+}
+
+
+.box2{
+
+    order:2;
+    grid-column: 4/ 5 ;
+    grid-row: 2/ 3;
+}
+
+.box3{
+
+    order:4;
+    grid-column: 2 / 3 ;
+    grid-row: 3 / 4 ;
+}
+
+.box4{
+
+    order:5;
+    grid-column:3 / 5;
+    grid-row: 3 / 4 ;
+
+
+}
+
+.box5{
+
+    order:3;
+    grid-column: 5 / 6;
+    grid-row: 2 / 3 ;
+    
+}
+
+.attribution{
+    order:6;
+    grid-column:  3 / 5;
+    grid-row: 5 ;
+    font-size: 1em;
+}
+
+}  
